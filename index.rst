@@ -12,6 +12,7 @@ Package: install, create, and publish
    slides/04_create_and_distribute_package
    slides/05_1_virtual_environment
    slides/05_2_dependency_utils
+   slides/05_3_pipenv
    slides/06_1_documentation
    slides/06_2_Sphinx
    slides/07_Sphinx_setup
