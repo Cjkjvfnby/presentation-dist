@@ -1,18 +1,22 @@
-.. Pack and Doc documentation master file, created by
-   sphinx-quickstart on Tue Mar 10 10:31:52 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to Pack and Doc's documentation!
-========================================
+Package: install, create, and publish
+=====================================
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
 
-   slides/main
-
-
+   slides/01_intro
+   slides/02_install
+   slides/03_1_pip_install
+   slides/03_2_pip_advanced_install
+   slides/04_create_and_distribute_package
+   slides/05_1_virtual_environment
+   slides/05_2_dependency_utils
+   slides/06_1_documentation
+   slides/06_2_Sphinx
+   slides/07_Sphinx_setup
+   slides/08_Sphinx_automodule
+   slides/09_summary
 
 Indices and tables
 ==================

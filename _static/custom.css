@@ -1,0 +1,9 @@
+.quote-text {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 150%
+}
+
+.quote-author {
+  text-align: right;
+}
