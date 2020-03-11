@@ -6,12 +6,12 @@ Documentation is a key to successful library.
 Pydoc vs Sphinx vs markdowns
 ----------------------------
 
-PyDoc can autogenerate documentation from python code.
+PyDoc can auto generate documentation from python code.
 
-Markdowns(reStructuredText, GitHub flavored markdown etc) simple text processors that allow to write text,
-but does not support any autogeneration.
+Markdowns (reStructuredText, GitHub flavored markdown etc) simple text processors that allow to write text,
+but does not support any auto generation.
 
-Sphinx allow both autogeneration and text writing, but require more knowledge to use.
+Sphinx allows both auto generation and text writing, but requires more knowledge to use.
 
 ..
   Чтобы добиться успеха библиотеки без документации, у вас должен быть очень нишевый продукт, без которого пользователи не могу жить.

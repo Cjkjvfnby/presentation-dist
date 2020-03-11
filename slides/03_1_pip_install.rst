@@ -2,7 +2,7 @@ Install via pip
 ***************
 
 **pip** is the package installer for Python.
-You can use **pip** to install packages with dependencies from the Python Package Index and other indexes.
+You can use **pip** to install packages with dependencies from the Python Package Index and other places.
 
 - Python Package Index (PyPI)
 
