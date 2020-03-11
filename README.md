@@ -1,6 +1,5 @@
-Presentation for the EPAM students.
+Presentation for the EPAM students about package distribution.
 
-Slides language is English
-Presentation will be presented in Russian
+Slides language is English, presentation will be presented in Russian.
 
-Slides notes are paces inside RST files as comments.
+Slides notes are places inside RST files as comments.
