@@ -7,9 +7,11 @@ Pydoc vs Sphinx vs markdowns
 ----------------------------
 
 PyDoc can autogenerate documentation from python code.
+
 Markdowns(reStructuredText, GitHub flavored markdown etc) simple text processors that allow to write text,
 but does not support any autogeneration.
-Sphinx allow both autogeneration and text writing, but require more knowledge to use. And its good in both.
+
+Sphinx allow both autogeneration and text writing, but require more knowledge to use.
 
 ..
   Чтобы добиться успеха библиотеки без документации, у вас должен быть очень нишевый продукт, без которого пользователи не могу жить.

@@ -19,7 +19,7 @@ Release on PyPI
 ---------------
 
 To release you package on pip you will need to create some additional files
-**README.md** and **LICENCE** and follow `instructions <https://packaging.python.org/tutorials/packaging-projects/>`_
+**README.md** and **LICENCE** and follow `instructions <https://packaging.python.org/tutorials/packaging-projects/>`_.
 
 
 Wheel vs Egg

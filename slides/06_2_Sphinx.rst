@@ -1,16 +1,16 @@
 Sphinx
 ######
- - create text documents with reStructuredText
- - auto generate documentation for python code
- - export to various formats
- - choose one of predefined style or create own
- - publish you public documentation on readthedocs.org for free
+    - create text documents with reStructuredText
+    - auto generate documentation for python code
+    - export to various formats
+    - choose one of predefined style or create own
+    - publish you public documentation on readthedocs.org for free
 
 Such great power is come in price.
 
-- Require setup
-- Sphinx reStructuredText is not very user friendly, you need to learn it
-- Can only extract docstring, developer still need to write them in source code
+    - Require setup
+    - Sphinx reStructuredText is not very user friendly, you need to learn it
+    - Can only extract docstring, developer still need to write them in source code
 
 ..
   Какие возможности предоставляет нам сфинкс:
