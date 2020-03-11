@@ -1,7 +1,7 @@
 Install package
 ***************
 
-Ways to install a python package.
+Ways to install a python package:
 
 - download and do **python setup.py**
 - download and copy to PYTHON_PATH

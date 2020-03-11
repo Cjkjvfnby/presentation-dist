@@ -12,13 +12,13 @@ You can specify
 - package meta info like: name, description, version
 - which python is supported by your package
 - specify required dependencies
-- script that will be installed to system (like pip)
+- script that will be installed to system (like **pip**)
 
 
 Release on PyPI
 ---------------
 
-To release you package on pip you will need to create some additional files
+To release you package on PyPI you will need to create some additional files
 **README.md** and **LICENCE** and follow `instructions <https://packaging.python.org/tutorials/packaging-projects/>`_.
 
 
