@@ -3,13 +3,13 @@ Virtual environment
 
 Each application can get it own python.
 Virtual environment allow to fast switch between projects by having copy of installed python modules for each project.
-Tools for virtual environment creation is part of the Python 3 installation `installation <https://docs.python.org/3/tutorial/venv.html>`_.
+Tools for virtual environment creation is part of the Python 3 `installation <https://docs.python.org/3/tutorial/venv.html>`_.
 It allows creating a copy of the "python" installed libraries in specified folder. You can install dependencies for each environment separately.
 
 Virtual env creation example
 ============================
 
-Creating virtual env, this command wil just create a folder with activation scripts and empty folder for libraries
+Creating virtual env, this command will just create a folder with activation scripts and empty folder for libraries
 
 .. code-block:: text
 
