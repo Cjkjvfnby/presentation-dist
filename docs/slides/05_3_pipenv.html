@@ -88,7 +88,7 @@
 <li class="toctree-l1"><a class="reference internal" href="03_1_pip_install.html">Install via pip</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_2_pip_advanced_install.html">Working with packages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_1_why_package.html">Why do we need to package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_2_create_package.html">Create and distribute packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_2_create_package.html">Create packages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_3_distribute_package.html">Distribute packages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_1_virtual_environment.html">Virtual environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_2_dependency_utils.html">Dependency management tools</a></li>
@@ -228,15 +228,15 @@ It also provides option to provide dev/test dependencies only, no need to have a
 <td><p>in specific folder</p></td>
 <td><p>in specific folder</p></td>
 </tr>
-<tr class="row-even"><td><p>tracking versions</p></td>
+<tr class="row-even"><td><p>tracking deps versions</p></td>
 <td><p>yes</p></td>
 <td><p>yes</p></td>
 </tr>
 <tr class="row-odd"><td><p>update requirements file</p></td>
-<td><p>no</p></td>
-<td><p>yes</p></td>
+<td><p>manual</p></td>
+<td><p>auto</p></td>
 </tr>
-<tr class="row-even"><td><p>sho dependency graph</p></td>
+<tr class="row-even"><td><p>show dependency graph</p></td>
 <td><p>no</p></td>
 <td><p>yes</p></td>
 </tr>
@@ -244,17 +244,13 @@ It also provides option to provide dev/test dependencies only, no need to have a
 <td><p>no</p></td>
 <td><p>yes</p></td>
 </tr>
-<tr class="row-even"><td><p>tracking library hash</p></td>
+<tr class="row-even"><td><p>tracking library hashes</p></td>
 <td><p>no</p></td>
 <td><p>yes</p></td>
 </tr>
-<tr class="row-odd"><td><p>use pip and venv under hood</p></td>
-<td><p>yes</p></td>
-<td><p>yes</p></td>
-</tr>
-<tr class="row-even"><td><p>preferred way to manage deps</p></td>
+<tr class="row-odd"><td><p>preferred way to manage deps</p></td>
 <td><p>no</p></td>
-<td><p>yes</p></td>
+<td><p>yes (by PyPA)</p></td>
 </tr>
 </tbody>
 </table>

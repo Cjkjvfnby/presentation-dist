@@ -22,7 +22,7 @@ You can use **pip** to install packages with dependencies from the Python Packag
 
     pip install git+git://github.com/author/repository.git@master
 
-- From the private packages
+- From the private packages and by direct links to packages
 
 **pip** is just python script, when you run it with python you will do work for that python.
 If you run script without explicit python executable, you will use latest installed pip.
@@ -41,9 +41,9 @@ You can run pip with explicit Python version
     c:\Python38\lib\site-packages\pip (python 3.8)
 
 ..
-  Посмотрим, откуда пип может устанавливать библиотеки.
+  Пип умеет забирать данные из разных источников
 
-  Во первых тз централизованного хранилища артефактов пупи Питонпакадж Индекс
+  Во первых из централизованного хранилища артефактов пупи (Питонпакадж Индекс)
   Из папки с setup.py
   Из любой точки гитхаба будь то ветка, тэг, коммит или один из релизов
   Из urls ссылок, и закрытых хранилищ построенных по типу пупи.
