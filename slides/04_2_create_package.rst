@@ -14,7 +14,7 @@ description of distutils `features <https://docs.python.org/3/distutils/setupscr
 
 PEP-517/PEP-518
 ***************
-New configuration file is added: **pyproject.toml**
+New configuration file is added: **pyproject.toml**.
 Now, you can specify dependencies that required for installation.
 They are used during installation and removed after (`PEP-518 <https://www.python.org/dev/peps/pep-0518/>`_).
 

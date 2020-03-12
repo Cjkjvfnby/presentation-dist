@@ -7,7 +7,7 @@ Reuse and share code
 .. role:: quote-text
    :class: quote-text
 
-:quote-text:`Code reuse is the Holy Grail of Software Engineering.`
+:quote-text:`"Code reuse is the Holy Grail of Software Engineering."`
 
 :quote-author:`- Douglas Crockford, known for JSON (JavaScript Object Notation)`
 
