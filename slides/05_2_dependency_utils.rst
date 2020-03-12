@@ -1,9 +1,8 @@
 Dependency management tools
 ===========================
-- `pipenv <https://github.com/pypa/pipenv>`_
-- `Dephell <https://dephell.readthedocs.io/hell.html>`_
-- `Poetry <https://github.com/python-poetry/poetry>`_
-- `Flit <https://github.com/takluyver/flit>`_
+- `pipenv <https://github.com/pypa/pipenv>`_  (win, nix)
+- `Dephell <https://dephell.readthedocs.io/hell.html>`_ (nix)
+- `Poetry <https://github.com/python-poetry/poetry>`_ (win, nix)
 
 .. image:: standards.png
    :alt: https://xkcd.com/927/

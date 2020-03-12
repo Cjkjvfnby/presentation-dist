@@ -1,6 +1,17 @@
 Working with packages
 *********************
 
+Specify index URL
+=================
+If you want to install from another index you can specify **index URL**.
+Service should be compatible with `PEP503 <https://www.python.org/dev/peps/pep-0503/>`_.
+
+Ways are listed in priority order, top item has more precedence.
+
+- **pip install --index-url <url> ....**
+- environment variable **PIP_INDEX_URL**
+- **index-url** option in **pip.conf**
+
 Specify version to be installed
 ===============================
 
@@ -64,4 +75,4 @@ Installation
   Для указания файла с требованиями используется аргумент -r.  Это аргумент можно использовать рекурсивно в самом файле. Это удобно когда нужно иметь разные наборы по установке инадо избежать дублирования.
   Например продукт состоит из разных сервисов, у каждого из которых свои требования, но на машине разработчика хочтестя поставить все стразу.
 
-  Мы поговорили как пользоваться пакетами перейдем к созданию.
+  Мы поговорили как пользоваться пакетами перейдем к созданию.  Как вы думаете зачем нужны пакеты?

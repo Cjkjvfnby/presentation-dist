@@ -9,7 +9,9 @@ Package: install, create, and publish
    slides/02_install
    slides/03_1_pip_install
    slides/03_2_pip_advanced_install
-   slides/04_create_and_distribute_package
+   slides/04_1_why_package
+   slides/04_2_create_package
+   slides/04_3_distribute_package
    slides/05_1_virtual_environment
    slides/05_2_dependency_utils
    slides/05_3_pipenv
