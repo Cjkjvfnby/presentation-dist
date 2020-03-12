@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Create packages &mdash; Package: install, create, and publish  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Distribute packages" href="04_3_distribute_package.html" />
+    <link rel="prev" title="Why do we need to package" href="04_1_why_package.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Package: install, create, and publish
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_intro.html">Reuse and share code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_install.html">Install package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_1_pip_install.html">Install via pip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_2_pip_advanced_install.html">Working with packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_1_why_package.html">Why do we need to package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Create packages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#package-tools">Package tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup-py">setup.py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pep-517-pep-518">PEP-517/PEP-518</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">distutils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">poetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">flit</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#information-required-for-packaging">Information required for packaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#starting">Starting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">setup.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">poetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">flit</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#project-examples">Project examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_3_distribute_package.html">Distribute packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_1_virtual_environment.html">Virtual environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_2_dependency_utils.html">Dependency management tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_3_pipenv.html">pipenv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_1_documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_2_Sphinx.html">Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_Sphinx_setup.html">Setup Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_Sphinx_automodule.html">Autodoc extension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_summary.html">Summary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Package: install, create, and publish</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Create packages</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/slides/04_2_create_package.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="create-packages">
+<h1>Create packages<a class="headerlink" href="#create-packages" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="package-tools">
+<h2>Package tools<a class="headerlink" href="#package-tools" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to create package in different ways</p>
+<div class="section" id="setup-py">
+<h3>setup.py<a class="headerlink" href="#setup-py" title="Permalink to this headline">¶</a></h3>
+<p>Classic way, you write everything in the <strong>setup.py</strong>.
+Where is only one tool that can package it and it is <strong>distutils</strong>.
+Recommendation for <a class="reference external" href="https://packaging.python.org/tutorials/packaging-projects/">packaging projects</a>,
+description of distutils <a class="reference external" href="https://docs.python.org/3/distutils/setupscript.html">features</a>.</p>
+</div>
+<div class="section" id="pep-517-pep-518">
+<h3>PEP-517/PEP-518<a class="headerlink" href="#pep-517-pep-518" title="Permalink to this headline">¶</a></h3>
+<p>New configuration file is added: <strong>pyproject.toml</strong>
+Now, you can specify dependencies that required for installation.
+They are used during installation and removed after (<a class="reference external" href="https://www.python.org/dev/peps/pep-0518/">PEP-518</a>).</p>
+<p>You can specify witch tool should be used for installation (<a class="reference external" href="https://www.python.org/dev/peps/pep-0517/">PEP-517</a>).
+You are not tied to distutils anymore. This opens a new era in python distribution.</p>
+<p>Here is incomplete list of tools that can be used:</p>
+<div class="section" id="id1">
+<h4><a class="reference external" href="https://docs.python.org/3/distutils/setupscript.html">distutils</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>Default tool, still requires <strong>setup.py</strong> to create a package.</p>
+</div>
+<div class="section" id="id2">
+<h4><a class="reference external" href="https://python-poetry.org/docs/">poetry</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>All package data is located in <strong>pyproject.toml</strong>, no need to have <strong>setup.py</strong> anymore.
+Besides from packaging this tool focuses on dependency management.</p>
+</div>
+<div class="section" id="id3">
+<h4><a class="reference external" href="https://flit.readthedocs.io/en/latest/index.html">flit</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p>All package data is located in <strong>pyproject.toml</strong>, no need to have <strong>setup.py</strong> anymore.
+Cannot be used when need to compile C or bundle Javascript.
+This tool has good support for publishing on PyPI.</p>
+</div>
+</div>
+<div class="section" id="information-required-for-packaging">
+<h3>Information required for packaging<a class="headerlink" href="#information-required-for-packaging" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>package meta info: name, description, version etc.
+If you publish your library somewhere make sure that you fill this field with normal data.
+Use <a class="reference external" href="https://semver.org/">semantic versioning</a></p></li>
+<li><p>which python is supported by your package.
+Python 3.5 is a good start for public libraries, for limited number of users try to use as new version as you can.
+It will allow you to use all new shiny features</p></li>
+<li><p>required dependencies for your package.
+Don’t forget to specify exact versions or at least ranges</p></li>
+<li><p>script that will be installed to system (like <strong>pip</strong>).
+You can have own script that will be copied to executable dir
+<a class="reference external" href="https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html#the-scripts-keyword-argument">distutils</a>
+or use python function that will be packed as script (Entry point)
+<a class="reference external" href="https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html#the-console-scripts-entry-point">distutils</a>
+<a class="reference external" href="https://python-poetry.org/docs/pyproject/#scripts">poetry</a></p></li>
+</ul>
+</div>
+<div class="section" id="starting">
+<h3>Starting<a class="headerlink" href="#starting" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h4>setup.py<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p>Create manually</p>
+</div>
+<div class="section" id="id8">
+<h4>poetry<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<p>Create template of the project with <strong>poetry new project_name</strong></p>
+</div>
+<div class="section" id="id9">
+<h4>flit<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p>Wizard to create <strong>pyproject.toml</strong> and <strong>LICENSE</strong></p>
+</div>
+</div>
+<div class="section" id="project-examples">
+<h3>Project examples<a class="headerlink" href="#project-examples" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/pypa/sampleproject">sampleproject by PyPA</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Cjkjvfnby/demo/">poetry</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Cjkjvfnby/flit/">flit</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="04_3_distribute_package.html" class="btn btn-neutral float-right" title="Distribute packages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="04_1_why_package.html" class="btn btn-neutral float-left" title="Why do we need to package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Andrey Solomatin
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
