@@ -2,7 +2,7 @@ Autodoc extension
 *****************
 
 It allows to extract documentation from module, class, function.
-This is flexible and powerful system. But sometimes require a time to get result you want.
+This is flexible and powerful system. But sometimes requires a time to get result you want.
 To get good documentation you need to have good documentation in source code.
 
 Example of automodule directive
