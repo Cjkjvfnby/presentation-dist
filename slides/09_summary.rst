@@ -1,7 +1,7 @@
 Summary
 *******
 
-We have covered:
+We covered:
 
 - how to install package
 - how to create own package
