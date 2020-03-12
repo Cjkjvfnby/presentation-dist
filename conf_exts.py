@@ -1,5 +1,5 @@
 extensions = [
-    'sphinx.ext.autodoc',  # autdoc module
+    'sphinx.ext.autodoc',  # auto documentation module
     'sphinx.ext.intersphinx',  # links to external documentation services
     'sphinx.ext.viewcode',  # show code source in generated documentation
 ]

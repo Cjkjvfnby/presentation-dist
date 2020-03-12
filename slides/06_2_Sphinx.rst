@@ -4,7 +4,7 @@ Sphinx
     - auto generate documentation for Python code
     - export to various formats
     - choose one of predefined style or create own
-    - publish you public documentation on readthedocs.org for free
+    - publish your public documentation on readthedocs.org for free
 
 Such great power is come in price.
 
